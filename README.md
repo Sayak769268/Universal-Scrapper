@@ -63,9 +63,9 @@ I used the following URLs for testing:
 2.  **https://vercel.com/**
     -   *Type:* Dynamic / JS-Heavy.
     -   *Why:* To test the JS fallback strategy, ensuring content rendered by React is captured.
-3.  **http://quotes.toscrape.com/scroll**
-    -   *Type:* Infinite Scroll.
-    -   *Why:* To demonstrate the scraper's ability to automatically scroll down and capture dynamically loaded content.
+3.  **https://www.fcbarcelona.com/en/**
+    -   *Type:* Modern / Dynamic.
+    -   *Why:* Verified working example of a rich, media-heavy site that demonstrates the scraper's ability to handle complex layouts and dynamic content.
 
 ## Limitations
 -   **Complex interactions:** The scraper handles basic "Load More" buttons and standard tabs, but complex SPAs with non-standard navigation might not be fully explored.
