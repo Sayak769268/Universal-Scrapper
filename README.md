@@ -63,11 +63,16 @@ I used the following URLs for testing:
 2.  **https://vercel.com/**
     -   *Type:* Dynamic / JS-Heavy.
     -   *Why:* To test the JS fallback strategy, ensuring content rendered by React is captured.
-3.  **https://news.ycombinator.com/**
-    -   *Type:* Pagination / List.
-    -   *Why:* To test the interaction logic (scrolling/pagination) and ability to capture lists of links.
+3.  **http://quotes.toscrape.com/scroll**
+    -   *Type:* Infinite Scroll.
+    -   *Why:* To demonstrate the scraper's ability to automatically scroll down and capture dynamically loaded content.
 
 ## Limitations
 -   **Complex interactions:** The scraper handles basic "Load More" buttons and standard tabs, but complex SPAs with non-standard navigation might not be fully explored.
 -   **Anti-bot measures:** Sites with aggressive anti-bot protections (Cloudflare, etc.) may block the scraper.
 -   **Table parsing:** Table parsing is rudimentary and may not preserve complex headers or merged cells perfectly.
+
+---
+<div align="center">
+  <b>Made with ❤️ by Sayak Mukherjee</b>
+</div>
