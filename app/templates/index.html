@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyftr AI - Universal Scraper</title>
+    <link rel="stylesheet" href="/static/style.css?v=3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Universal Scraper</h1>
+            <p>Unlock data from any website with our intelligent, full-stack scraping engine.</p>
+        </header>
+
+        <main>
+            <div class="input-wrapper">
+                <div class="input-actions" style="position: relative; display: flex; gap: 0.5rem; width: 100%;">
+                    <input type="url" id="urlInput" placeholder="Enter URL to scrape (e.g., https://example.com)..."
+                        required
+                        style="width: 100%; border: none; padding: 0; outline: none; background: transparent; font-size: inherit;">
+
+                    <button id="scrapeBtn" style="white-space: nowrap;">
+                        <span>Scrape URL</span>
+                    </button>
+
+                    <button id="clearBtn" class="reset-btn" title="Reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 4 23 10 17 10"></polyline>
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Analyzing and extracting data...</p>
+            </div>
+
+            <div id="error" class="hidden"></div>
+
+            <div id="results" class="hidden">
+                <div class="results-header">
+                    <h2>Scrape Results</h2>
+                    <button id="downloadBtn" class="secondary-btn">Download JSON</button>
+                </div>
+
+                <div id="metaInfo">
+                    <!-- Meta info populated here -->
+                </div>
+
+                <div class="sections-list" id="sectionsList">
+                    <!-- Sections populated here -->
+                </div>
+
+                <div class="meta-card" id="interactionsInfo" style="margin-top: 2rem;">
+                    <!-- Interactions populated here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="main-footer">
+        <p>Universal Website Scraper Project</p>
+        <p class="credit">Made by <strong>Sayak Mukherjee</strong></p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+httpx
+beautifulsoup4
+playwright
+jinja2
+python-multipart
+playwright-stealth
+fake-useragent
+requests
+lxml
